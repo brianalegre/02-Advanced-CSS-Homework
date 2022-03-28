@@ -14,7 +14,7 @@ header {
 
 header h1 {
     display: inline-block;
-    font-size: 36px;
+    font-size: 30px;
     border: 2px solid white;
     padding: 10px;
     border-radius: 10px;
@@ -58,19 +58,24 @@ li a:hover {
     height: 800px;
 }
 
+.hero .intro {
+    position: relative;
+    top: 40%;
+    left: 20%;
 
-.intro {
-    border: 2px solid red;
 }
 
 .intro h1 {
     color: white;
+    font-size: 3em;
+    word-spacing: 0.15em;
 }
 
 .intro h2 {
-    color: grey;
+    color: lightgrey;
     font-size: 1.2em;
-    margin-left: 1%;
+    margin-left: 2.5%;
+    word-spacing: 0.15em;
 }
 
 
