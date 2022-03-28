@@ -37,15 +37,24 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-left: 30px;
+    margin-bottom: 5px;
+
 }
 
 li a {
     text-decoration: none;
     color: white;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: 1s;
+
 }
 
 li a:hover {
     cursor: pointer;
+    text-decoration-color: white;
+
+
 }
 
 
