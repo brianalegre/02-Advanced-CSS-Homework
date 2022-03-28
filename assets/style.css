@@ -2,6 +2,7 @@
 * {
     margin:0;
     padding:0;
+    box-sizing: border-box;
   }
 
 /* Nav Section */
@@ -65,13 +66,15 @@ li a:hover {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 800px;
+    height: 1000px;
 }
 
 .hero .intro {
     position: relative;
     top: 40%;
     left: 20%;
+    height: auto;
+    width: 500px;
 
 }
 
