@@ -45,6 +45,7 @@ li a {
     text-decoration: none;
     color: white;
     text-decoration: underline;
+    text-underline-position: under;
     text-decoration-color: transparent;
     transition: 1s;
 
