@@ -64,7 +64,6 @@ li a:hover {
 
 /* Banner */
 .hero {
-    /* background-image: url("../assets/images/emile-perron-xrVDYZRGdw4-unsplash.jpg"); */
     background-image: url("../images/emile-perron-xrVDYZRGdw4-unsplash.jpg");
     background-size: cover;
     background-position: center;
@@ -101,7 +100,45 @@ footer {
     text-align: center;
 }
 
-/* About me section */
+/* About Me Section */
 #aboutMe {
     border: 1px solid black;
 }
+
+
+/* Skills Section */
+/* #skills {
+    background-image: url("../images/Desk-wall.jpg");
+    background-position: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 400px;
+
+} */
+
+.container {
+    width: 100%;
+    height: 1000px;
+    border: 1px solid blue;
+}
+
+.child {
+    width: 100%;
+    height: 100%;
+    background-color: black; /* fallback color */
+    background-image: url("../images/Desk-wall.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .skillOne {
+      position: relative;
+      height: 200px;
+      width: 300px;
+
+  }
+
+  .skillTwo {
+    height: 250px;
+    width: 300px;
+  }
