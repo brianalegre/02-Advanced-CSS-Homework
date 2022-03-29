@@ -1,5 +1,5 @@
-/* Universal Selector */
-* {
+/* Default Formatting */
+body {
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -121,12 +121,48 @@ footer {
 .container .card {
         /* Spaces outs in thirds of the total width */
         width: 25%;
+        height: 200px;
         /* Sets border */
         border: 2px solid black;
         /* Adds space between the items */
         margin: 40px;
         padding: 10px;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5em;
+        border-radius: 15px;
 }
 
+.container {
+    border: 1px solid blue;
+}
 
+.container h2 {
+    position: relative;
+    top: 0;
+    border: 1px solid red;
+
+}
+
+#first {
+    color: white;
+    background-color: orangered;
+}
+
+#second {
+    color: white;
+    background-color: blue;
+}
+
+#third {
+    color: black;
+    background-color: yellow;
+}
+
+#fourth,
+#fifth,
+#sixth {
+    color: black;
+    background-color: #2a607c;
+}
