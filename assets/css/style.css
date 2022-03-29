@@ -134,15 +134,9 @@ footer {
         border-radius: 15px;
 }
 
-.container {
-    border: 1px solid blue;
-}
-
 .container h2 {
     position: relative;
     top: 0;
-    border: 1px solid red;
-
 }
 
 #first {
