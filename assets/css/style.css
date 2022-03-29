@@ -121,24 +121,28 @@ footer {
 .container .card {
         /* Spaces outs in thirds of the total width */
         width: 25%;
-        height: 200px;
+        height: 150px;
         /* Sets border */
         border: 2px solid black;
         /* Adds space between the items */
         margin: 40px;
         padding: 10px;
+        font-size: 4em;
+        border-radius: 15px;
+        /* Center Conetent inside */
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 5em;
-        border-radius: 15px;
 }
 
-.container h2 {
-    position: relative;
-    top: 0;
+
+.container > h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 8em;
 }
 
+/* Styling for Skills */
 #first {
     color: white;
     background-color: orangered;
