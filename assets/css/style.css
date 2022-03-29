@@ -32,7 +32,7 @@ header nav {
 }
 
 header nav ul {
-        list-style-type: none;
+    list-style-type: none;
 }
 
 header nav ul li {
@@ -45,6 +45,7 @@ header nav ul li {
 li a {
     text-decoration: none;
     color: white;
+    /* Used for underline sytling when hovering */
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: transparent;
@@ -53,6 +54,7 @@ li a {
 }
 
 li a:hover {
+    /* Change cursor to pointer */
     cursor: pointer;
     text-decoration-color: white;
 
@@ -62,7 +64,8 @@ li a:hover {
 
 /* Banner */
 .hero {
-    background-image: url("../assets/images/emile-perron-xrVDYZRGdw4-unsplash.jpg");
+    /* background-image: url("../assets/images/emile-perron-xrVDYZRGdw4-unsplash.jpg"); */
+    background-image: url("../images/emile-perron-xrVDYZRGdw4-unsplash.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -96,4 +99,9 @@ footer {
     padding: 30px;
     clear: both;
     text-align: center;
+}
+
+/* About me section */
+#aboutMe {
+    border: 1px solid black;
 }
