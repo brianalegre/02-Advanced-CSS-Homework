@@ -4,6 +4,7 @@
     padding: 0;
     /* Link Font Family */
     font-family: 'Poppins', sans-serif;
+    /* border: 2px solid purple; */
 }
 
 header {
@@ -246,7 +247,13 @@ h3 {
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
-    transition: 0.5s;
+    /* Changes the Icon Size since its a Font Awesome Import */
+    font-size: 40px;
+    /* transition: 0.5s; */
+
+    /* .icons .fa:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+} */
 }
 
 
@@ -281,9 +288,7 @@ h3 {
 }
 
 
-/* .icons .fa:hover {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-} */
+
 
 /* Media Query */
 @media screen and (max-width: 700px) {
