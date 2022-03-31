@@ -17,11 +17,11 @@ Create a Portfolio Web Page
 
 # Requirements:
 - Developer's Name
- - Recent photo or avatar
- - Links to sections about them, work, or contact
+ - Recent photo or avatar --> Done
+ - Links to sections about them, work, or contact 
 
-- Navigation links to section on the page
-- - Scrolls to the section
+- Navigation links to section on the page --> Done
+- - Scrolls to the section --> Done
 
 - Section with tilted images of develop's applications
 - - First application image is bigger than the rest of the applications
