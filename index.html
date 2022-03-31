@@ -5,104 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Brian Alegre | Web Developer </title>
+    <!-- Link Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <!-- For adding the Nav Bar Button on Media Query -->
+    <!-- CDN for Nav Icon/Buttons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Full Responsive Web Page</title>
 </head>
 <body>
     <header>
-        <h1> Brian Alegre </h1>
-        <!-- Nav Bar -->
         <nav> 
-            <ul>
-                <li> 
-                    <a href="#aboutMe"> About Me </a> 
-                </li>
-                <li> 
-                    <a href="#skills"> Skills </a> 
-                </li>
-                <li> 
-                    <a href="#tools"> Tools </a>
-                </li>
-                <li> 
-                    <a href="#applications"> Applications </a>
-                </li>
-                <li> 
-                    <a href="#contact"> Contact </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Picture / Banner -->
-    <section class="hero" title="Picture of XYZ"> 
-        <div class="intro"> 
             <h1> Brian Alegre </h1>
-            <h2> Web Developer </h2>
+            <section class="nav-links" id="navLinks">
+                <!-- Closing Icon for Media Query Nav Bar -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li> 
+                            <a href="#aboutMe"> About Me </a> 
+                        </li>
+                        <li> 
+                            <a href="#skills"> Skills </a> 
+                        </li>
+                        <li> 
+                            <a href="#tools"> Tools </a>
+                        </li>
+                        <li> 
+                            <a href="#applications"> Applications </a>
+                        </li>
+                        <li> 
+                            <a href="#contact"> Contact </a>
+                        </li>
+                    </ul>
+            </section>
+            <!-- Menu Icon for Media Query Nav Bar -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <section class="text-box">
+        <h1> Brian Alegre </h1>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum facilis labore dolorum tempora, illo sequi, id illum porro, <br>
+            quae velit cupiditate repellat nam voluptatem. Quo praesentium ad asperiores debitis quas.</p>
+        <!-- Button -->
+        <a class="hero-btn" href=""> Poke </a>
+    </section>
+    </header>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h1>Skills</h1>
+        <p>Some text</p>
+        <div class="row">
+            <div class="skills-col">
+                <h3>HTML5</h3>
+                <p>Some Text</p>
+            </div>
+        <div class="skills-col">
+            <h3>CSS</h3>
+            <p>Some Text</p>
+        </div>
+        <div class="skills-col">
+            <h3>JavaScript</h3>
+            <p>Some Text</p>
+        </div>
         </div>
     </section>
-    <!-- Main Sections -->
-    <main>
-        <!-- About Me -->
-        <article id="aboutMe">
-            <h2> About Me</h2>
-                <article class="intro">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, veritatis asperiores, </p> 
-                    <p>delectus facilis minima similique consectetur quidem incidunt quam fugit, nisi itaque odio </p>
-                    <p>tempore doloremque maxime voluptas et sunt.</p>
-                </article>
-        </article>
 
-        <!-- Skills -->
-        <article id="skills" class="container">
-            <h2> Skills </h2>
-            <section id="first" class="card"> 
-                <h2>HTML</h2>
-            </section>
+    <!-- Tools -->
+    <section id="tools">
+        <h1> Tools </h1>
+        <p>Some Text</p>
+        <div class="row">
+            <div class="tools-col">
+                <img src="./assets/images/app-icon.png" alt="VS Code">
+                <div class="layer">
+                    <h3>Visual Studio Code</h3>
+                </div>
+            </div>
+            <div class="tools-col">
+                <img src="./assets/images/github2.png" alt="Github">
+                <div class="layer">
+                    <h3>Github</h3>
+                </div>
+            </div>
+            <div class="tools-col">
+                <img src="./assets/images/slack.png" alt="Slack">
+                <div class="layer">
+                    <h3>Slack</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <section id="second" class="card"> 
-                <h2>CSS</h2>
-            </section>
+    <!-- Applications -->
+    <!-- <section id="applications">
+        <h1> My Applications </h1>
+        <p>Some Text</p>
+        <div class="row">
+           <div class="app-row">
+               <img src="" alt="Place Holder">
+           </div> 
+        </div>
+    </section> -->
 
-            <section id="third" class="card"> 
-                <h2>JavaScript</h2>
-            </section>
-
-            <section id="fourth" class="card"> 
-                <h2>Placeholder</h2>
-            </section>
-
-            <section id="fifth" class="card"> 
-                <h2>Placeholder</h2>
-            </section>
-            
-            <section id="sixth" class="card"> 
-                <h2>Placeholder</h2>
-            </section>
-
-        </article>
-
-        <!-- Tools -->
-        <article id="tools">
-            <h2> Tools </h2>
-        </article>
-
-        <!-- Applications -->
-        <article id="applications">
-            <h2> Aplications </h2>
-        </article>
-    </main>
-
-    <!-- Footer -->
+    <!-- Contact -->
     <footer id="contact">
-        <p>
-            &copy; 2022 Brian Alegre
-        </p>
+        <h4>Contact Me</h4>
+        <p>Some Text</p>
+        <div class="icons">
+            <a href="https://github.com/brianalegre" target="_blank"><i class="fa fa-github"></i></a> 
+            <a href="https://www.linkedin.com/in/brian-alegre/" target="_blank"><i class="fa fa-linkedin"></i></a> 
+            <a href="mailto: brialegre@yahoo.com"><i class="fa fa-envelope"></i></a> 
+            <a href="https://docs.google.com/document/d/1ib_oK6OZG6353VS7CuBLe0iwJxh_PSiM/edit?usp=sharing&ouid=100305447258009104354&rtpof=true&sd=true" target="_blank"><i class="fa fa-file-text"></i> </a> 
+        </div>
+        <p> &copy; 2022 Brian Alegre </p>
     </footer>
+ 
 
 
 
 
+<!-- Javascript for Hiding and Showing Nav Menu on Media Query  -->
+<script>
+    var navLinks = document.getElementById("navLinks");
 
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
 
-
-    
 </body>
 </html>

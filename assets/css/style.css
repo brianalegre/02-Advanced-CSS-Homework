@@ -1,166 +1,302 @@
-/* Default Formatting */
-body {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    /* Link Font Family */
+    font-family: 'Poppins', sans-serif;
+}
 
-/* Nav Section */
 header {
-    padding: 20px;
-    background-color: #2a607c;
-    color: white;
-}
-
-header h1 {
-    display: inline-block;
-    font-size: 30px;
-    border: 2px solid white;
-    padding: 10px;
-    border-radius: 10px;
-    margin-left: 1%;
-    letter-spacing: 0.125em;
-}
-
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    font-size: 20px;
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 30px;
-    margin-bottom: 5px;
-
-}
-
-li a {
-    text-decoration: none;
-    color: white;
-    /* Used for underline sytling when hovering */
-    text-decoration: underline;
-    text-underline-position: under;
-    text-decoration-color: transparent;
-    transition: 1s;
-
-}
-
-li a:hover {
-    /* Change cursor to pointer */
-    cursor: pointer;
-    text-decoration-color: white;
-
-
-}
-
-
-/* Banner */
-.hero {
-    background-image: url("../images/emile-perron-xrVDYZRGdw4-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
+    min-height: 100vh;
     width: 100%;
-    height: 1000px;
-}
-
-.hero .intro {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("../images/macbook.jpg");
+    background-position: center;
+    background-size: center;
     position: relative;
-    top: 40%;
-    left: 20%;
-    height: auto;
-    width: 500px;
-
+    background-repeat: no-repeat;
 }
 
-.intro h1 {
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    width: 250px;
     color: white;
-    font-size: 3em;
-    word-spacing: 0.15em;
 }
 
-.intro h2 {
-    color: lightgrey;
-    font-size: 1.2em;
-    margin-left: 2.5%;
-    word-spacing: 0.15em;
+.nav-links {
+    /* 1 row */
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    /* Side by side, same line */
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Hover Effect Part 1 */
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/* Hover Effect Part 1 */
+.nav-links ul li:hover::after {
+    width: 100%;
 }
 
 
-footer {
-    padding: 30px;
-    clear: both;
+/* Text and Button in the Header */
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-/* About Me Section */
-#aboutMe {
-    border: 1px solid black;
+.text-box h1 {
+    font-size: 62px;
 }
 
+.text-box p {
+    margin: 10px 0px 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Button */
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Button Styling  */
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+/* Hide Nav Bar Buttons for Media Query */
+nav .fa {
+    display: none;
+}
 
 /* Skills Section */
-
-.container {
-    /* Sets the display to flex */
-    /* allows the flex proporties */
-    display: flex; 
-    /* Spaces out the items evenly */
-    justify-content: space-evenly;
-    /* Items will go to the next row once the item reaches the end width */
-    flex-wrap: wrap;
-}
-
-.container .card {
-        /* Spaces outs in thirds of the total width */
-        width: 25%;
-        height: 150px;
-        /* Sets border */
-        border: 2px solid black;
-        /* Adds space between the items */
-        margin: 40px;
-        padding: 10px;
-        font-size: 4em;
-        border-radius: 15px;
-        /* Center Conetent inside */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-}
-
-
-.container > h2 {
+#skills {
+    width: 80%;
+    /* Center and Auto */
+    margin: auto;
     text-align: center;
+    /* Adds space from the top */
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600px;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Format and Styling for the "cards" */
+.skills-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Hover effect */
+.skills-col:hover {
+    /* Shadow effect, black all around*/
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Tools Sections */
+#tools {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.tools-col {
+    flex-basis: 32%;
+    /* border-radius: 10px; */
+    margin-bottom: 30px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.tools-col img {
     width: 100%;
-    font-size: 8em;
 }
 
-/* Styling for Skills */
-#first {
-    color: white;
-    background-color: orangered;
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    /* Puts text at the top */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
 }
 
-#second {
-    color: white;
-    background-color: blue;
+.layer:hover {
+    /* background: #fff3f3; */
+    background: rgba(255,243,243,0.7);
 }
 
-#third {
-    color: black;
-    background-color: yellow;
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #000;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
 }
 
-#fourth,
-#fifth,
-#sixth {
-    color: black;
-    background-color: #2a607c;
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+/* Applications Section */
+/* #applications {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+} */
+
+/* Footer Section*/
+#contact {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#contact h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/* Media Query */
+@media screen and (max-width: 700px) {
+
+    /*                   */
+    /* Top / Nav Section */
+    /*                   */
+    
+    /* Change Text Area in Header */
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    /* Change Nav Bar  */
+    .nav-links ul li {
+        display: block;
+    }
+
+    /* Change Nav Bar for layout the Nav Button */
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    /* Show Nav Bar Icon/Buttons */
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    /* Spacing between links and sides */
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    /*                   */
+    /*   Skills Section  */
+    /*                   */
+    .row {
+        flex-direction: column;
+    }
+
 }
