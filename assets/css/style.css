@@ -249,6 +249,38 @@ h3 {
     transition: 0.5s;
 }
 
+
+/* About Me Section */
+#aboutMe {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+#aboutMe p {
+    color: #000;
+    font-weight: 600;
+}
+
+.about-col {
+    flex-basis: 80%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    display: flex;
+}
+
+.about-col img {
+    height: 500px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+
 /* .icons .fa:hover {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 } */
