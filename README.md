@@ -31,6 +31,7 @@ Create a Portfolio Web Page
 
 - Mobile compatibility
 
+- Add color vars
 
 # Task Tracking
 

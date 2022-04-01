@@ -278,6 +278,12 @@ h3 {
 
 }
 
+/* feature first portfolio item */
+.flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
 
 /* Button */
 .github-btn {
