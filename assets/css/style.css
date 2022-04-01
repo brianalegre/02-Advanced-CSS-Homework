@@ -278,11 +278,20 @@ h3 {
 
 }
 
-/* feature first portfolio item */
-.flex-item:first-child {
-    min-height: 400px;
-    flex-basis: 100%;
+
+/*  New Applications */
+.excursion {
+    background-image: url("../images/excursion.jpeg");
 }
+
+.refactor {
+    background-image: url("../images/refactor3.jpeg");
+}
+
+.rps {
+    background-image: url("../images/RPS4.png");
+}
+
 
 
 /* Button */
