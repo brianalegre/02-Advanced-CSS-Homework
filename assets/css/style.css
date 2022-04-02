@@ -274,28 +274,50 @@ h3 {
 .app-col img {
     width: 100%;
     border-radius: 10px;
-    border: 2px solid purple;
 
 }
 
-
-/*  New Applications */
 .excursion {
-    background-image: url("../images/excursion.jpeg");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("../images/excursion.jpeg");
 }
 
 .refactor {
-    background-image: url("../images/refactor3.jpeg");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("../images/refactor3.jpeg");
 }
 
 .rps {
-    background-image: url("../images/RPS4.png");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("../images/RPS4.png");
 }
 
+/* Grow Rotate */
+.hvr-grow-rotate {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+  .hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+    transform: scale(1.1) rotate(4deg);
+  }
+
+  /* Grow */
+  .hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    transform: scale(1.1);
+  }
 
 
 /* Button */
-.github-btn {
+/* .github-btn {
     position: absolute;
     top: 75%;
     left: 20%;
@@ -306,16 +328,16 @@ h3 {
     padding: 10px 34px;
     font-size: 13px;
     background: transparent;
-}
+} */
 
 /* Button Styling  */
-.github-btn:hover {
+/* .github-btn:hover {
     border: 1px solid #f44336;
     background: #f44336;
-    transition: 1s;
-}
+    transition: 1s; 
+} */
 
-.live-btn {
+/* .live-btn {
     position: absolute;
     top: 75%;
     right: 0%;
@@ -325,15 +347,15 @@ h3 {
     border: 1px solid #fff;
     padding: 10px 34px;
     font-size: 13px;
-    background: transparent;
-}
+    background: transparent; 
+} */
 
 /* Button Styling  */
-.live-btn:hover {
+/* .live-btn:hover {
     border: 1px solid #f44336;
     background: #f44336;
-    transition: 1s;
-}
+    transition: 1s; 
+} */
 
 
 /* Footer Section*/
