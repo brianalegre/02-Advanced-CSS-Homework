@@ -8,12 +8,12 @@ Create a Portfolio Web Page
 
 # Site Preview
 <p align="center">
-    <img alt="" src="">
+    <img alt="Site Preview" src="./assets/images/SitePreview.png">
 </p>
 
 # Github Links
 - Repository: https://github.com/brianalegre/02-Advanced-CSS-Homework
-- Deployed: 
+- Deployed: https://brianalegre.github.io/02-Advanced-CSS-Homework/
 
 # Requirements:
 - Developer's Name
@@ -30,8 +30,6 @@ Create a Portfolio Web Page
 - - Takes you to the deployed application
 
 - Mobile compatibility
-
-- Add color vars
 
 ## Acceptance Criteria
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
