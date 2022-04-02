@@ -21,6 +21,14 @@ header {
     background-repeat: no-repeat;
 }
 
+p {
+    color: #777;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 10px;
+}
+
 nav {
     display: flex;
     padding: 2% 6%;
@@ -54,7 +62,7 @@ nav h1 {
 }
 
 /* Hover Effect Part 1 */
-.nav-links ul li::after {
+/* .nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -62,12 +70,12 @@ nav h1 {
     display: block;
     margin: auto;
     transition: 0.5s;
-}
+} */
 
 /* Hover Effect Part 1 */
-.nav-links ul li:hover::after {
+/* .nav-links ul li:hover::after {
     width: 100%;
-}
+} */
 
 
 /* Text and Button in the Header */
@@ -86,8 +94,8 @@ nav h1 {
 }
 
 .text-box p {
-    margin: 10px 0px 40px;
-    font-size: 14px;
+    margin: 10px 0px 40px 125px;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -124,10 +132,10 @@ nav .fa {
     text-align: center;
 }
 
-#aboutMe p {
+/* #aboutMe p {
     color: #000;
     font-weight: 600;
-}
+} */
 
 .about-col {
     flex-basis: 100%;
@@ -155,13 +163,7 @@ h1 {
     font-weight: 600px;
 }
 
-p {
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
+
 
 .row {
     margin-top: 5%;
